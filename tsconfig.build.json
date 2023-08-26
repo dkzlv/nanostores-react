@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "es2022",
+    "declaration": true,
+    "outDir": "./",
+    "rootDir": "./"
+  },
+  "include": [
+    "index.ts"
+  ],
+  "exclude": ["node_modules/**/*"]
+}

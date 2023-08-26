@@ -1,40 +1,10 @@
-import type { Store, StoreValue } from 'nanostores'
-
-type StoreKeys<T> = T extends { setKey: (k: infer K, v: any) => unknown }
-  ? K
-  : never
-
-export interface UseStoreOptions<SomeStore> {
-  /**
-   * Will re-render components only on specific key changes.
-   */
-  keys?: StoreKeys<SomeStore>[]
-}
-
-/**
- * Subscribe to store changes and get store’s value.
- *
- * Can be user with store builder too.
- *
- * ```js
- * import { useStore } from 'nanostores/react'
- *
- * import { router } from '../store/router'
- *
- * export const Layout = () => {
- *   let page = useStore(router)
- *   if (page.route === 'home') {
- *     return <HomePage />
- *   } else {
- *     return <Error404 />
- *   }
- * }
- * ```
- *
- * @param store Store instance.
- * @returns Store value.
- */
-export function useStore<SomeStore extends Store>(
-  store: SomeStore,
-  options?: UseStoreOptions<SomeStore>
-): StoreValue<SomeStore>
+import { type ReadableAtom, type Context, type StoreValue } from 'nanostores';
+import React from 'react';
+export declare function useNanostoresContext(): Context;
+export declare function NanostoresLocalContext({ localId, values, children }: React.PropsWithChildren<{
+    localId: string;
+    values?: Map<any, any>;
+}>): React.ReactNode;
+export declare function useStore<T extends ReadableAtom<any>>(store: T, opts?: {
+    keys?: string[];
+}): StoreValue<T>;

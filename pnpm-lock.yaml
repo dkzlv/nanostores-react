@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^2.0.2
     version: 2.0.2
   nanostores:
-    specifier: ^0.9.0
-    version: 0.9.0
+    specifier: github:dkzlv/nanostores#3fa7097d8cad97c6a131b95d0f2f5790a9a5e090
+    version: github.com/dkzlv/nanostores/3fa7097d8cad97c6a131b95d0f2f5790a9a5e090
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -920,7 +920,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /clean-publish@4.2.0:
@@ -1750,8 +1750,8 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -2292,11 +2292,6 @@ packages:
     resolution: {integrity: sha512-yFvNYMig4AthKYfHFl1sLj7B2nkHL4lzdig4osvl9/LdGbXwrdFRoqBS98gsEsOakr0yH+r5NZ/1Y9gdVB8trA==}
     dependencies:
       picocolors: 1.0.0
-    dev: true
-
-  /nanostores@0.9.0:
-    resolution: {integrity: sha512-6s1zA8JZbvMo/sLtcLCeNSlznMEG2RVpDGxi9gsdD0eip7YflxrGJC0ZkX67EFpHagtXpY5Na7jX5xOSOHk+Jw==}
-    engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     dev: true
 
   /natural-compare-lite@1.4.0:
@@ -2936,4 +2931,11 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  github.com/dkzlv/nanostores/3fa7097d8cad97c6a131b95d0f2f5790a9a5e090:
+    resolution: {tarball: https://codeload.github.com/dkzlv/nanostores/tar.gz/3fa7097d8cad97c6a131b95d0f2f5790a9a5e090}
+    name: nanostores
+    version: 0.9.3
+    engines: {node: ^18.0.0 || >=20.0.0}
     dev: true

@@ -10,6 +10,7 @@
     "react native"
   ],
   "scripts": {
+    "build": "tsc -p tsconfig.build.json",
     "unit": "tsm node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
     "test": "c8 pnpm unit  && eslint . && check-dts && size-limit"
   },
@@ -58,7 +59,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "happy-dom": "^9.20.3",
     "nanodelay": "^2.0.2",
-    "nanostores": "^0.9.0",
+    "nanostores": "github:dkzlv/nanostores#3fa7097d8cad97c6a131b95d0f2f5790a9a5e090",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "size-limit": "^8.2.4",
